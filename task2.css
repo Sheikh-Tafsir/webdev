@@ -1,0 +1,40 @@
+*{
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(15, 15, 15);
+    background-color: pink;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacts{
+    display:flex;
+    justify-content: space-evenly;    
+    text-align: center;
+    height:70vh;
+    
+}
+.cards{
+    background-color: white;
+    border:1px solid black;
+    height: 80%;
+    transition: 0.3s;
+}
+.cards:nth-child(1){
+    transform: translateX(20vw) rotate(-30deg);
+}
+.cards:nth-child(3){
+    transform: translateX(-20vw) rotate(30deg);
+}
+.cards img{
+    width:80%;
+    height:40vh;
+}
+.contacts:hover .cards:nth-child(1){
+    transform: translateX(0) rotate(0);
+}
+.contacts:hover .cards:nth-child(3){
+    transform: translateX(0) rotate(0);
+}
